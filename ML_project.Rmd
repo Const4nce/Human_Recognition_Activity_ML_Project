@@ -1,5 +1,5 @@
 ---
-output: html_document
+output: pdf_document
 ---
 
 #Human Activity Recognition based on Data Retrieved from Activity Monitoring Devices (Accelerometers)
@@ -146,7 +146,7 @@ for (i in 1:length(testing) ) {
     }      
 }
 #And to make sure Coercion really worked:
-testing <- rbind(my_training2[2, -58] , testing) #note row 2 does not mean anything, this will be removed:
+testing <- rbind(my_training2[2, -58] , testing)
 testing <- testing[-1,]
 ```
 
